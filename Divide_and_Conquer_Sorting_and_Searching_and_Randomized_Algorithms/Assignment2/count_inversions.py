@@ -1,3 +1,11 @@
+def read_number(filename):
+    """ Read the numbers from the txt file """
+    with open(filename) as f:
+        lines = f.readlines()
+    nums = [int(line.split('\n')[0]) for line in lines]
+    return nums
+
+
 def merge_sort_count(array):
     """
     Count the number of inversions in an array
@@ -37,9 +45,12 @@ def merge_sort_count(array):
 
 
 def main():
-    a = [1, 3, 5, 2, 4, 6]
-    _, count = merge_sort_count(a)
-    assert count == 3
+    # test case
+    nums = read_number('count_inversions_test.txt')
+    assert merge_sort_count(nums)[1] == 28
+
+    nums = read_number('IntegerArray.txt')
+    print(merge_sort_count(nums)[1])
 
 
 if __name__ == '__main__':
