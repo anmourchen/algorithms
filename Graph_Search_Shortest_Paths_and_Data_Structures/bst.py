@@ -19,7 +19,7 @@ class Node():
     def getChildren(self):
         children = []
         if self.leftChild:
-            children.append(self.letfChild)
+            children.append(self.leftChild)
         if self.rightChild:
             children.append(self.rightChild)
         return children

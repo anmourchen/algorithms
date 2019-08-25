@@ -6,6 +6,7 @@ hashtable = {}
 
 
 def read_numbers(filename):
+    """ read the list of integers from the txt file """
     with open(filename) as f:
         lines = f.readlines()
     nums = [int(line.split()[0]) for line in lines]
@@ -15,6 +16,9 @@ def read_numbers(filename):
 
 
 def two_sum(nums, low, high):
+    """ find the counts of a target in [low, end] that satisfies sum of two distinct elements in nums equal to target
+        TODO: finishing in about 3 hours, need to be optimized
+    """
     count = 0
     for target in tqdm(range(low, high + 1)):
         tmp_dict = hashtable.copy()
