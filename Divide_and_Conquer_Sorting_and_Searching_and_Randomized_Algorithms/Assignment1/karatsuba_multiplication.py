@@ -1,6 +1,7 @@
 def karatsuba(x, y):
     """
     Implement Karatuba Multiplication of two integers
+    TODO: run time is still O(n^2)
     """
     if len(str(x)) == 1 and len(str(y)) == 1:
         return x * y
