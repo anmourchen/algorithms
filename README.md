@@ -1,5 +1,12 @@
 # [Coursera Algorithms Specialization by Stanford](https://www.coursera.org/specializations/algorithms)
 
+## Course Review
+* This course assumes you have the basic knowlege in algorithms and data structures and also familiar with one of the programming languages.
+* Good lectures for preparing for the technical interviews for Software Engineers, Data Scientists and Machine Learning Engineers.
+* Covers all the fundamental algorithms including divide and conquer, randomized algorithms, greedy algorithm and dynamic programming. Covers most of the advanced data structures including graph, binary trees, heaps, hashtables, union and find. Lacks the introduction of basic data structures such as arrays, strings, linked lists.
+* Focuses more on the graph problems, such as shortest path and graph search using BFS and DFS.
+* Introduces big-Oh notation (very important in technical interviews) and NP-complete problems. A lot of proofs on the correctness and running time of the algorithm.
+
 ## Requirement
 * Python 3
 
